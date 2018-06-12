@@ -1,0 +1,12 @@
+rootProject.name = 'tigase-iot-framework-examples'
+include ':example-java'
+include ':example-python'
+
+def prefixSubprojectNames(children, prefix) {
+	children.each {
+		it.name = prefix + it.name;
+		prefixSubprojectNames(it.children, prefix)
+	}
+}
+prefixSubprojectNames(rootProject.children, "iot-")
+

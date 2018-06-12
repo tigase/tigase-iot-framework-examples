@@ -1,0 +1,14 @@
+.gradle/
+.idea/
+
+/example-java/etc
+/example-java/out
+/example-java/target
+/example-java/build
+/example-java/home.log
+
+/example-python/etc
+/example-python/out
+/example-python/target
+/example-python/build
+/example-python/home.log
